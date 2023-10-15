@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+<div class="main">
+    <table>
+        <tr>
+            <td colspan="4"><p class="resultado" id="resultado"></p></td>
+        </tr>
+        <tr class="primeira">
+            <td class="nav"><button class="ponto" onclick="insert('.')">.</button></td>
+            <td class="nav"><button onclick="clean()">CE</button></td>
+            <td class="nav"><button class="apagar" onclick="clean()">C</button></td>
+            <td class="nav"><button onclick="backspace()">Apagar</button></td>
+        </tr>
+        <tr>
+            <td class="num"><button onclick="insert('1')">1</button></td>
+            <td class="num"><button onclick="insert('2')">2</button></td>
+            <td class="num"><button onclick="insert('3')">3</button></td>
+            <td><button class="num1" onclick="insert('/')">/</button></td>
+        </tr>
+        <tr>
+            <td class="num"><button onclick="insert('4')">4</button></td>
+            <td class="num"><button onclick="insert('5')">5</button></td>
+            <td class="num"><button onclick="insert('6')">6</button></td>
+            <td><button class="num1" onclick="insert('*')">*</button></td>
+        </tr>
+        <tr>
+            <td class="num"><button onclick="insert('7')">7</button></td>
+            <td class="num"><button onclick="insert('8')">8</button></td>
+            <td class="num"><button onclick="insert('9')">9</button></td>
+            <td><button class="num1" onclick="insert('+')">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="numero0" onclick="insert('0')">0</button></td>
+            <td class="num"><button onclick="insert('-')">-</button></td>
+            <td><button class="num1" id="igual" onclick="confirma()">=</button></td>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
